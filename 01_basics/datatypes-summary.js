@@ -29,3 +29,26 @@ const myFunction = function() {
 
 console.log(typeof BigInt)
 console.log(typeof myFunction)
+
+// +++++++++++++++++++++++++++++++++++
+
+// Stack(Primitives) vs Heap(Reference)
+
+let myYoutubename = "Codevolution" 
+let anotherName = myYoutubename
+anotherName = "Codevolution2"
+
+console.log(anotherName)
+console.log(myYoutubename)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "safa@google.com"
+
+console.log(userOne.email) // safa@google.com
+ 
